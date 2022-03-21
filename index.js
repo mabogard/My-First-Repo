@@ -14,4 +14,6 @@ const actionsroute=require('./actions')
 app.use('/api',actionsroute)
 //5.create virtual server environment
 const port=5000;
-app.listen(port);
+app.listen(port,function(){
+    console.log(`server is working${port}`);
+});
